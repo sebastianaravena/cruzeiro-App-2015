@@ -1,0 +1,492 @@
+/* IMPORTO FUENTES DE GOOGLE FONTS */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Open+Sans+Condensed:300,700&subset=latin,latin-ext);
+
+/* IMPORTO HOJA DE ESTILOS PARA LA GALERIAS SLDIER RESPONSIVE DE PAGINA PRODUCTOS */
+@import url(jquery.bxslider.css);
+
+/* FUENTES DE FONT-FACE PARA EL SITIO */
+@font-face {
+    font-family:'faraco_handregular';
+    src: url('../fonts/faracohand-webfont.eot');
+    src: url('../fonts/faracohand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/faracohand-webfont.woff') format('woff'),
+         url('../fonts/faracohand-webfont.ttf') format('truetype'),
+         url('../fonts/faracohand-webfont.svg#faraco_handregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'neonmedium';
+    src: url('../fonts/neon-webfont.eot');
+    src: url('../fonts/neon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/neon-webfont.woff') format('woff'),
+         url('../fonts/neon-webfont.ttf') format('truetype'),
+         url('../fonts/neon-webfont.svg#neonmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 
+font-family: 'Open Sans', sans-serif;	
+font-family: 'Open Sans Condensed', sans-serif;
+	
+*/
+
+
+/* 
+-------------------------------------------------------
+SOBRE-ESCRITURA DE CLASES GENERALES DE BOOTSTRAP
+-------------------------------------------------------
+*/
+
+/* Estilos de visualización de menu desplegable y colapsable General para Tablets */
+.navbar-header {
+float: none;
+border-radius: 0px;
+}
+.navbar-toggle {
+display: block;
+}
+.navbar-collapse {
+border-top: 1px solid transparent;
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-collapse.collapse {
+display: none!important;
+}
+.navbar-collapse.collapse.in {
+display: block!important;
+}
+.navbar-nav {
+float: none!important;
+margin: 7.5px -15px;
+}
+.navbar-nav>li {
+float: none;
+}
+.navbar-nav>li>a{
+padding-top:10px;
+padding-bottom:10px;
+text-transform:uppercase;
+color:#ccc;
+}
+ul.navbar-nav li a{
+color:#ccc;
+}
+
+/* Estilos para activar Los menus secundarios desplegables en tablets  li>(ul>li) , subsecciones de productos  */    
+.navbar-nav .open .dropdown-menu {
+position:static;
+float:none;
+width:auto;
+margin-top:0;
+background-color:transparent;
+border:0;
+box-shadow:none;
+text-transform:uppercase;
+}
+.navbar-nav .open .dropdown-menu > li > a,
+.navbar-nav .open .dropdown-menu .dropdown-header {
+padding:5px 15px 5px 25px;
+color:#ccc;
+}
+.navbar-nav .open .dropdown-menu > li > a {
+line-height:20px;
+}
+.navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-nav .open .dropdown-menu > li > a:focus {
+background-image:none;
+}
+.jumbotron{ margin:0px; }
+.container p{ font-size:1em; }
+
+
+
+/* 
+-------------------------------------------------------------------------------
+  ESTILOS GENERALES DEL SITIO | TRYO - AGENCIA DE EXPERIENCIAS DIGITALES -2015
+-------------------------------------------------------------------------------
+*/
+
+body{
+width:100%;
+height:100%;
+margin:0px;
+padding:0px;
+font-size:14px;
+font-weight:300;
+color:#222;
+text-align:left;
+font-family:'Open Sans',arial,helvetica,sans-serif;
+}
+
+/* ESTILOS DE TITULOS GENERALES */
+h1,h2,h3,h4{ font-weight:300; }
+h1{ text-transform:uppercase; }
+h2.normal{ text-transform:none; }
+h1{ font-size:2.8em; }
+h2{ font-size:2.3em; }
+h3{ font-size:2em; }
+h4{ font-size:3.5em;font-family:'neonmedium','Open Sans',arial,helvetica,sans-serif;line-height:0.8em; }
+h5{ font-size:1.5em;}
+h6{ font-size:2.7em;font-family:'neonmedium','Open Sans',arial,helvetica,sans-serif;line-height:0.8em; }
+h4.grande{ font-size:6em; }
+
+/* ESTILOS GENERALES PARA IMAGENES */
+img{ max-width:100%; }
+a,a:hover,a:active,a:visited{text-decoration:none;}
+a,a:hover{ color:#CCA100; }
+a img{ border:none; }
+
+/* ESTILOS DE TEXTOS Y TITULOS GENERALES */
+ul{ list-style-type:none;text-align:left;padding:0px; }
+ul li{ line-height:24px; }
+
+.desktop{ display:block; }
+.tablet,.smartphone{ display:none; }
+
+
+/* 
+-------------------------------------------
+ESTRUCTURAS SUPERIORES DEL SITIO 
+-------------------------------------------
+*/
+
+header{ 
+width:100%;
+height:85px;
+margin:0px;padding:0px;
+background:rgba(0,0,0,0.5);top:0px;position:absolute;
+}
+
+/* LOGOTIPO */
+figure.logo{ width:100%;height:auto;overflow:hidden; }
+
+/* REDES-SOCIALES */
+div.redes-home{ height:22px;margin:10px 0px 0px 0px; }
+div.redes-home a{ opacity:0.8;
+/* CSS3 Transitions */
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+div.redes a:hover{ opacity:1;transform:scale(1.1);-o-transform:scale(1.1);-ms-transform:scale(1.1);-moz-transform:scale(1.1);-webkit-transform:scale(1.1);
+}
+.modulo-redes-header{ float:right;height:22px;width:23px;margin:0px 3px; }
+
+/* NAVEGACION-SUPERIOR */
+nav.header{ width:100%;height:43px;margin:10px 0px 0px 0px;text-transform:uppercase;width:auto;text-align:right; }
+nav.header a{ line-height:42px;padding:0px 8px;color:white;display:block;float:right;
+/* CSS3 Transitions */
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+nav.header a:hover,nav.header a.activo{ line-height:55px;background:rgba(0,0,0,0.6);color:#FDC700;border-bottom:3px solid #FDC700; }
+
+/* BANNER-CENTRAL */
+figure#banner-central-home,figure#banner-central-interior{ width:100%;height:auto;overflow:hidden;background:rgba(0,0,0,0.6); }
+
+
+
+/* CAJA DE INFORMACIONES Y BREADCRUMBS */
+.informaciones{ width:100%;height:35px;background:black; }
+
+/* BREADCRUMBS */
+.breadcrumbs{ float:left;width:auto;height:35px;color:#ccc;font-family:arial,helvetica,sans-serif;font-weight:300; }
+.breadcrumbs a{ line-height:35px;color:white;font-family:'Open Sans', sans-serif;text-transform: uppercase; }
+.breadcrumbs a.activo { color:#FDC700; text-transform: uppercase; }
+.current{ color:#D30B00;text-transform: uppercase; }
+
+a.mail-info{ text-align:right;color:#FDC700;float:right;line-height:35px;font-family:arial,helvetica,sans-serif;font-weight:300; }
+
+div.telefono-info{ width:auto;height:35px;margin:0px 20px;padding:0px 10px;float:right;background:#222; }
+div.telefono-info p{ color:white;margin:0px;padding:0px;line-height:35px;font-family:arial,helvetica,sans-serif;font-weight:300; }
+div.telefono-info a{ color:white; }
+
+/* ESTILOS FORMULARIO DE BUSQUEDA */
+form.busqueda{ width:230px;height:27px;float:right;margin:4px;font-size:0.9em; }
+form.busqueda input{ width:209px;height:27px;float:left;background:white;border:none; }
+form.busqueda input[type="submit"]{ width:21px;height:27px;background:url(../img/vineta-formulario-general.png);border:none; }
+
+
+
+/* 
+-----------------------------------------
+	SECCIONES CENTRALES DEL HOME
+------------------------------------------
+*/
+
+#variedades-home{ background:#f6f6f6; }
+#redes-home{ background:#f2f2f2; }
+
+/* REDES-SOCIALES-DEL HOME */
+.banner-youtube-home{ padding:8px;border:1px solid #ddd; }
+.caja-facebook{ border-radius:6px;-ms-border-radius:6px;-o-border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;border:1px solid #eee;width:100%;height:auto;overflow:hidden; }
+
+#variedades-home a{ color:red; }
+#novedades-home{ background:#CC943D; }
+
+/* ESTILOS PARA TIPS Y CONSEJOS EN HOME */
+.not-principal{ position:relative;
+/* CSS3 Transitions */
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+.not-principal:hover{ transform:scale(1.05);-o-transform:scale(1.05);-ms-transform:scale(1.05);-moz-transform:scale(1.05);-webkit-transform:scale(1.05); }
+.not-principal:hover p{ background:black; }
+.not-principal a{ color:white; }
+.not-principal p{ background:rgba(0,0,0,0.8);padding:7px; }
+.mirar-imagen{ position:absolute;z-index:10;top:0px; }
+
+
+
+/* 
+-------------------------------------------------
+	PAGINA DE VARIEDADES GENERAL E INTERIORES
+-------------------------------------------------
+*/
+
+.variedades-general{ position:relative;
+/* CSS3 Transitions */
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+.variedades-general:hover{ transform:scale(0.95);-o-transform:scale(0.95);-ms-transform:scale(0.95);-moz-transform:scale(0.95);-webkit-transform:scale(0.95); }
+
+/* LISTAS DE VARIEDADES DE CAFÉ */
+ul.variedades{ margin:10px 0px; }
+ul.variedades li{ line-height:28px;border:none;margin-bottom:2px;  }
+ul.variedades li a{ display:block;color:white;background:#B99200;padding-left:15px;
+/* CSS3 Transitions */
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+ul.variedades li a:hover,ul.variedades li a.activo{ background:#4C300C;padding-left:25px; }
+
+
+/* MODULO DE RECETAS RELACIONADAS */
+#receta-relacionada{ background:#F0F0E1; }
+
+/* ESTILOS PARA TIPS Y CONSEJOS EN HOME */
+.receta-relacionada,.receta{ position:relative;
+/* CSS3 Transitions */
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+.receta-relacionada:hover,.receta:hover{ transform:scale(1.05);-o-transform:scale(1.05);-ms-transform:scale(1.05);-moz-transform:scale(1.05);-webkit-transform:scale(1.05); }
+
+.receta-relacionada a,.receta a{ color:white; }
+.receta-relacionada p{ background:rgba(218,218,0,0.8);padding:5px;font-family:'neonmedium','Open Sans',arial,helvetica,sans-serif;line-height:0.8em;font-size:3em; }
+.receta-relacionada:hover p{ background:#B2B200; }
+.mirar-imagen{ position:absolute;z-index:10;top:0px; }
+
+/* ESTILOS PAGINA RECETA GENERAL */
+.receta p{ padding:10px; }
+.receta div{ min-height:160px;overflow:hidden; }
+.receta div.verde{ background:#D9A300;}
+.receta div.cafe{ background:#D9D900;}
+.receta div.tierra{ background:#8C4600;}
+.receta div.verde-oscuro{ background:#B3B300;}
+
+
+/* MODULO DE REDES INFERIOR */
+#redes-inferior{ background:#f6f6f6; }
+
+
+
+/* 
+-------------------------------------------------
+	PAGINA DE NOTICIAS Y NOVEDADES
+-------------------------------------------------
+*/
+
+.listado-novedades-general{ width:100%;height:auto;overflow:hidden;border-bottom:1px dotted #ddd;padding-bottom:15px;margin-bottom:15px;}
+.listado-novedades-general img{ margin:0px 15px 5px 0px;border:6px solid #ddd;
+/* CSS3 Transitions */
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+ }
+.listado-novedades-general a p{ color:#333; }
+
+.listado-novedades-general:hover img{ transform:scale(0.95);-o-transform:scale(0.95);-ms-transform:scale(0.95);-moz-transform:scale(0.95);-webkit-transform:scale(0.95); }
+
+
+/* 
+-----------------------------------------
+	SECCIONES CONTACTO
+------------------------------------------
+*/
+
+/* NUEVO ESTILO PARA FORMULARIO DE CONTACTO GENERAL */
+form#contacto-general-cruzeiro{ margin:30px 0px;padding:10px;border:1px solid #f2f2f2;border-radius:10px;-o-border-radius:10px;-ms-border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px; }
+
+.mapa-contacto{ border:6px solid #ddd; }
+
+
+
+/* 
+-----------------------------------------
+	SECCIONES INFERIOR FOOTER
+------------------------------------------
+*/
+
+footer{ width:100%;height:170px;background:#242415;font-size:0.9em; }
+footer p{ color:#ddd; }
+
+div.nav-footer{ width:100%;height:45px;background:rgba(255,255,255,0.3); }
+div#caja-info-footer p{ color:white; }
+
+/* NAVEGADOR DEL FOOTER */
+#navegador-inferior{ text-transform:uppercase; }
+#navegador-inferior a{ color:white;display:block;height:45px;line-height:45px;float:right;padding:0px 12px;background:none;	
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+#navegador-inferior a:hover,#navegador-inferior a.activo{ background:#FBC800;color:black;line-height:60px; }
+
+.modulo-redes-footer{ float:left;height:26px;width:30px;margin:9px 3px; }
+.modulo-redes-footer a{
+opacity:0.8;
+/* CSS3 Transitions */
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+.modulo-redes-footer a:hover{ opacity:1;
+transform:scale(1.1);-o-transform:scale(1.1);-ms-transform:scale(1.1);-moz-transform:scale(1.1);-webkit-transform:scale(1.1);
+}
+
+
+
+
+/* Estilos para tablets */
+@media only screen and (max-width:992px){
+
+header{ height:auto;overflow:hidden;margin:50px 0px 0px 0px;background:none; }
+#banner-central-home,#banner-central-interior{ margin:50px 0px 0px 0px; }
+
+h4.grande{ font-size:4.2em; }
+.caja-facebook{ border:none; }
+
+
+}
+
+
+
+/* Estilos para desktop pequeños y tablets */
+@media only screen and (max-width:640px){
+
+h1{ font-size:2.1em; }
+h2{ font-size:1.9em; }
+h3{ font-size:1.5em; }
+
+header{ height:auto;overflow:hidden;margin:50px 0px 0px 0px;background:none;position:relative; }
+figure.logo{ margin-bottom:0px;height:auto;overflow:hidden; }
+#banner-central-home,#banner-central-interior{ margin:20px 0px 0px 0px; }
+
+/* OCULTO PESTAÑAS DEL SLIDER EN CAROUSEL DEL HOME */
+#carusel-smartphone .bx-wrapper .bx-prev,#carusel-smartphone .bx-wrapper .bx-next{ display:none; }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+-----------------------------------------
+	CLASES GENERLES DE AYUDA DEL SITIO
+------------------------------------------
+*/
+
+.imagen-izquierda{ float:left;margin:5px 20px 15px 0px;border:6px solid #eee; }
+.imagen-izquierda-simple{ float:left;margin:5px 10px 15px 0px; }
+.imagen-derecha{ float:right;margin:5px 0px 5px 10px;border:6px solid #eee; }
+
+p.left{ float:left;margin: 0px 0px 0px 15px; }
+p.right{ float:right;margin: 0px 15px 0px 0px; }
+
+/* ESPACIOS Y SEPARACIONES */
+.no-space{ margin:0px;padding:0px; }
+.no-top{ margin-top:0px; }
+.no-bottom{ margin-bottom:0px; }
+.top-10{ margin-top:10px; }
+.top-20{ margin-top:20px; }
+.top-30{ margin-top:30px; }
+.top-40{ margin-top:40px; }
+.bottom-5{ margin-bottom:5px; }
+.bottom-10{ margin-bottom:10px; }
+.bottom-20{ margin-bottom:20px; }
+.bottom-30{ margin-bottom:30px; }
+.bottom-40{ margin-bottom:40px; }
+.padding-10{ padding:10px 0px; }
+.padding-20{ padding:20px 0px; }
+.padding-30{ padding:30px 0px; }
+
+.left-10{ margin-left:10px; }
+.left-20{ margin-left:20px; }
+.left-30{ margin-left:30px; }
+.right-10{ margin-right:10px; }
+.right-20{ margin-right:20px; }
+.right-30{ margin-right:30px; }
+
+.total{ width:100%;height:auto;overflow:hidden; }
+.separador{ margin:20px 0px;width:100%;height:auto;overflow:hidden;}
+.separador-gris{ margin:20px 0px;width:100%;height:auto;overflow:hidden;border-top:1px dashed #ddd; }
+.separador-azul{ margin:20px 0px;width:100%;height:auto;overflow:hidden;border-top:1px solid #336699; }
+.separador-fixture{ margin:10px 0px;width:100%;height:auto;overflow:hidden;border-top:1px dotted #ddd; }
+
+.inline{ display:inline; }
+
+p{text-align:justify;}
+p.importante{ font-size:1.2em; }
+p.grande{ font-size:3em; }
+span{ color:#CCA100; }
+span.grande{ font-size:1.5em;}
+span.rojo{ color:#B61E12; }
+
+.color-blanco{ color:white; }
+
+
+
+
+
+
