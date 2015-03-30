@@ -6,10 +6,10 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>dacapo karaoke</name>
+    <name>prueba con el lucho</name>
 
     <description>
-	Esta es una app de karaoke para el pub-restaurant Dacapo.
+	Esta es una apps de prueba
 	</description>
 
     <author href="http://www.familygroup.cl" email="aravena.sa@gmail.com">
